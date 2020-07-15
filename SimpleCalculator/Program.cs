@@ -10,38 +10,18 @@ namespace SimpleCalculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What operation do you want to use (Add, Subtract, Multiply, Divide)?");
+            Console.WriteLine("What operation do you want to use (Use sign symbol. Ex: +, -, *, or /)?");
             string answer = Console.ReadLine();
 
             Console.Write("Enter your first number: ");
             int num1 = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Enter your second number: ");
-            int num2 = Convert.ToInt32(Console.ReadLine()); 
+            int num2 = Convert.ToInt32(Console.ReadLine());
 
+           
         }
-        public int Add(int num1, int num2)
-        {
-            int sum = num1 + num2;
-            return sum;
-        }
-
-        public int Subtract(int num1, int num2)
-        {
-            int sum = num1 - num2;
-            return sum;
-        }
-
-        public int Multiply(int num1, int num2)
-        {
-            int sum = num1 * num2;
-            return sum;
-        }
-
-        public int Divide(int num1, int num2)
-        {
-            int sum = num1 / num2;
-            return sum;
-        }
+        
+  
     }
 }
