@@ -19,7 +19,28 @@ namespace SimpleCalculator
             Console.Write("Enter your second number: ");
             int num2 = Convert.ToInt32(Console.ReadLine());
 
-           
+            Calculate sum = new Calculate();
+
+            if (answer.Equals("+"))
+            {
+                Console.WriteLine(sum.Add(num1, num2));
+            }
+            else if (answer.Equals("-"))
+            {
+                Console.WriteLine(sum.Subtract(num1, num2));
+            }
+            else if (answer.Equals("*"))
+            {
+                Console.WriteLine(sum.Multiply(num1, num2));
+            }
+            else if (answer.Equals("/"))
+            {
+                Console.WriteLine(sum.Divide(num1, num2));
+            }
+            else
+            {
+                Console.WriteLine("Invalid operation. Enter a correct sign (+, -, *, or /).");
+            }
         }
         
   
